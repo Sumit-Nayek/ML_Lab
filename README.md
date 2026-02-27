@@ -1,4 +1,3 @@
-# 🧪 ML Lab
 
 ## 📌 Project Overview
 

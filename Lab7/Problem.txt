@@ -1,0 +1,5 @@
+Generate the synthetic dataset which represent thick concentric circles shapes with 5 features.
+a)     Apply standard PCA using RBF kernel to reduce the data set to 2 and 3 dimensions. Hence,
+visualize transformed spaces separately.
+b)     Apply standard PCA using Polynomial kernel to reduce the data set to 2 and 3
+dimensions. Hence, visualize transformed spaces separately.

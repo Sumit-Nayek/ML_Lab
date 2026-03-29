@@ -1,0 +1,8 @@
+Use the https://www.nitttrkol.ac.in/kinsuk/lab/ML_Lab7_data.xlsx to predict whether a tumor is malignant or
+benign using SVM. Perform the following Tasks in order to do the same.
+
+a)      Perform data pre-processing (normalization, missing values if any etc.)
+b)      Train SVM with multiple kernels
+c)      Compare performance metrics
+d)      Plot ROC curve (FVR vs TPR)
+e)      Discuss on overfitting and under fitting

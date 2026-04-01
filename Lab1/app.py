@@ -5,9 +5,8 @@ from scipy.stats import skew, kurtosis
 
 st.title(" Dataset Statistics Analyzer")
 
-# -----------------------------
 # File Upload
-# -----------------------------
+
 uploaded_file = st.file_uploader("Upload CSV File", type=["csv"])
 
 if uploaded_file is not None:
@@ -16,22 +15,17 @@ if uploaded_file is not None:
     st.subheader("Dataset Preview")
     st.write(df.head())
 
-    # -----------------------------
     # Missing Values
-    # -----------------------------
+
     total_missing = df.isnull().sum().sum()
     st.subheader("Missing Values")
     st.write(f"Total Missing Values: **{total_missing}**")
 
-    # -----------------------------
     # Numeric Columns Only
-    # -----------------------------
     num_df = df.select_dtypes(include=[np.number])
     num_df_no_missing = num_df.dropna()
 
-    # -----------------------------
     # Stats Function
-    # -----------------------------
     def get_stats(data):
         stats = pd.DataFrame({
             "Mean": data.mean(),
@@ -45,9 +39,7 @@ if uploaded_file is not None:
         })
         return stats
 
-    # -----------------------------
     # Show Results
-    # -----------------------------
     st.subheader(" Statistics WITH Missing Values")
     st.dataframe(get_stats(num_df))
 

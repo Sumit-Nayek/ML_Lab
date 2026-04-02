@@ -1,0 +1,5 @@
+Export Olivetti faces dataset using standard packages and complete the following tasks in a single PYTHON program
+a)     Flatten images into vectors (array form, you may reshape)
+b)     Apply PCA with 25, 50 and 100 components separately
+c)     Reconstruct images for three above cases
+d)    Draw your conclusions

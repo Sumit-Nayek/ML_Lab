@@ -1,0 +1,9 @@
+Write a Python program that can: a) load a dataset from a CSV file b) display the mean, median, mode, range, variance, standard deviation, skewness and kurtosis of the dataset, both
+with and without missing values.
+
+Input: load CSV file with data with GUI interface (Browse and select option)
+Output
+2: Print the total number of missing values (if any) in GUI interface
+
+Output
+3: mean, median, mode, range, variance, standard deviation, skewness and kurtosis in GUI interface

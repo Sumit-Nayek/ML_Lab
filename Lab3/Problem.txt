@@ -1,0 +1,4 @@
+Given the dataset: https://www.nitttrkol.ac.in/kinsuk/ML_lab3_data.xlsx
+Write a PYTHON program
+a)    To Encode categorical data using Label Encoding.
+b)    Hence, using Decision Tree classifier predict whether a Game will be played based on weather conditions

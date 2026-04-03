@@ -1,0 +1,7 @@
+## Given the dataset: https://www.nitttrkol.ac.in/kinsuk/sample_day2.txt  
+
+Write a PYTHON program in order to
+a)  Compute the slope and intercept using the least squares method and display the equation of the regression line.
+b)  Plot the data points and the regression line.
+c)  Split the data into training (80%) and testing (20%) sets. Hence, train a multiple linear regression model (MLP) for the same dataset for predicting the y value for x = 2026
+d)  Calculate Root Mean Squared Error (RMSE) and R² Score as in (c)

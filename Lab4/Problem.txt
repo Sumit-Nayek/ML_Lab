@@ -1,0 +1,6 @@
+Write a PYTHON code in order to build a Random Forest model on a real-world dataset : https://www.nitttrkol.ac.in/kinsuk/ML_lab4_data.xlsx for the following tasks:
+a)    Data pre-processing (missing values, encoding)
+b)    Train Random Forest model
+c)    Evaluate performance
+d)    Display feature importance
+e)    Draw conclusions

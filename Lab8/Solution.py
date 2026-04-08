@@ -1,4 +1,4 @@
-# Chunk 1: Import necessary libraries
+# Import necessary libraries
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -22,7 +22,7 @@ print(df.columns.tolist())
 print("\nTarget distribution:")
 print(df['target'].value_counts())
 
-# Chunk 2: Data Pre-processing
+# Data Pre-processing
 
 # Since there are no missing values (as seen from output), we proceed
 
@@ -55,7 +55,7 @@ print(f"Test set size: {X_test.shape[0]}")
 print(f"Training target distribution:\n{pd.Series(y_train).value_counts()}")
 print(f"Test target distribution:\n{pd.Series(y_test).value_counts()}")
 
-# Chunk 3: Train SVM with multiple kernels
+# Train SVM with multiple kernels
 
 # Define kernels to test
 kernels = ['linear', 'poly', 'rbf', 'sigmoid']
@@ -93,7 +93,7 @@ for kernel in kernels:
 
 print("All models trained successfully!")
 
-# Chunk 4: Compare performance metrics
+# Compare performance metrics
 
 # Create results dataframe
 results = []
@@ -163,7 +163,7 @@ print(f"\nDetailed Classification Report for {best_kernel.upper()} Kernel:")
 print(classification_report(y_test, predictions[best_kernel], 
                            target_names=['Benign (0)', 'Malignant (1)']))
 
-# Chunk 5: Plot ROC curves (FPR vs TPR)
+# Plot ROC curves (FPR vs TPR)
 
 plt.figure(figsize=(10, 8))
 

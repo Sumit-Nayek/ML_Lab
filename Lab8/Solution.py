@@ -23,9 +23,7 @@ print("\nTarget distribution:")
 print(df['target'].value_counts())
 
 # Data Pre-processing
-
 # Since there are no missing values (as seen from output), we proceed
-
 # Separate features and target
 X = df.drop('target', axis=1)
 y = df['target']
@@ -59,7 +57,6 @@ print(f"Test target distribution:\n{pd.Series(y_test).value_counts()}")
 
 # Define kernels to test
 kernels = ['linear', 'poly', 'rbf', 'sigmoid']
-
 # Dictionary to store models and their predictions
 models = {}
 predictions = {}
@@ -94,7 +91,6 @@ for kernel in kernels:
 print("All models trained successfully!")
 
 # Compare performance metrics
-
 # Create results dataframe
 results = []
 for kernel in kernels:
@@ -123,10 +119,6 @@ for kernel in kernels:
 # Convert to DataFrame
 results_df = pd.DataFrame(results)
 results_df = results_df.round(4)
-
-
-
-
 print(results_df.to_string(index=False))
 
 # Find best kernel for each metric
@@ -137,11 +129,7 @@ for metric in ['Accuracy', 'Precision', 'Recall', 'F1-Score', 'AUC-ROC']:
     best_score = results_df[metric].max()
     print(f"{metric}: {best_kernel} kernel ({best_score:.4f})")
 
-
 # Display confusion matrices
-
-
-
 fig, axes = plt.subplots(2, 2, figsize=(12, 10))
 axes = axes.ravel()
 
@@ -164,7 +152,6 @@ print(classification_report(y_test, predictions[best_kernel],
                            target_names=['Benign (0)', 'Malignant (1)']))
 
 # Plot ROC curves (FPR vs TPR)
-
 plt.figure(figsize=(10, 8))
 
 colors = ['blue', 'green', 'red', 'orange']

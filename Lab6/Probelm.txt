@@ -1,0 +1,5 @@
+Use the given dataset: https://www.nitttrkol.ac.in/kinsuk/lab/ML_Lab6_data.xlsx
+and find the following using PYTHON
+a) Compute Prior Probabilities P(Spam = Yes) and P(Spam = No)
+b) Calculate P(Free= Yes ∣ Spam = Yes) and P(Money = Yes ∣ Spam = Yes)
+c) Using , compute: P(Spam ∣ Free=Yes, Win=Yes ,Mone y = No)

@@ -49,8 +49,3 @@ for i, n_comp in enumerate(n_comp_list):
 plt.tight_layout()
 plt.show()
 
-# d) Conclusions
-print("\nConclusions:")
-print("1. Dimensionality Reduction: PCA significantly reduces the data size from 4096 features to as low as 25.")
-print("2. Quality vs. Components: As the number of components increases (25 -> 50 -> 100), the reconstructed face becomes sharper and captures more unique facial details.")
-print("3. Information Loss: At 25 components, the face is recognizable but blurry, indicating loss of high-frequency spatial details. At 100 components, the reconstruction is very close to the original.")

@@ -1,0 +1,6 @@
+Use the given dataset: https://www.nitttrkol.ac.in/kinsuk/lab/ML_Lab5_data.xlsx
+for a product in order to classify the same product into three categories based on ingredient properties using the following steps with KNN.
+
+a) Apply feature scaling
+b) Implement KNN with Euclidean distance, Manhattan distance and Minkowski distance
+c) Compare accuracy and F1-score in a table

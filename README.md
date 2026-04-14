@@ -6,7 +6,7 @@ This repository contains practical examples, Jupyter notebooks, and scripts that
 
 Whether you’re a beginner in machine learning or an enthusiast looking to strengthen your foundation, this repo is built to support your learning journey.
 
----
+
 
 ## 🎯 Objective
 
@@ -17,7 +17,7 @@ The primary objectives of this project are:
 - To provide **well-commented code examples** that explain how algorithms work under the hood.  
 - To encourage experimentation, modification, and extension of models and techniques.
 
----
+
 
 ## 🧠 Topics & Concepts Covered
 
@@ -44,8 +44,6 @@ This repository applies core machine learning concepts including:
 - Accuracy, Precision, Recall, F1-Score  
 - Confusion Matrix  
 - ROC-AUC
-
----
 
 ## 🧰 Tools & Libraries Used
 

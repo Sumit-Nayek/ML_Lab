@@ -1,0 +1,1 @@
+Write a Python program to implement Logistic Regression for iris  and plot the confusion matrix.

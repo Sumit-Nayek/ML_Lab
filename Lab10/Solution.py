@@ -44,6 +44,3 @@ plt.ylabel('True Label')
 plt.tight_layout()
 plt.show()
 
-# Optional: Print the confusion matrix values
-print("\nConfusion Matrix:")
-print(cm)

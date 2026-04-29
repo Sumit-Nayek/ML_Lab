@@ -7,16 +7,20 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
 # -------------------------------
-# Load Dataset
+# Load Dataset from Colab Path
 # -------------------------------
 
-# If loading directly from URL
-url = "https://www.nitttrkol.ac.in/kinsuk/sample_day2.txt"
+# Make sure this matches the exact name of your uploaded file
+file_path = "/content/sample_day2.txt"
 
-# Try reading with automatic separator detection
-data = pd.read_csv(url, sep=None, engine='python', header=None)
+# Read the uploaded .txt file
+# We use sep='\t' for tab-separated data and handle the encoding issue safely
+try:
+    data = pd.read_csv(file_path, sep='\t', encoding='utf-16')
+except UnicodeError:
+    data = pd.read_csv(file_path, sep='\t', encoding='utf-8')
 
-# Rename columns (Assuming 2 columns: X and Y)
+# Ensure columns are named correctly based on your file
 data.columns = ['X', 'Y']
 
 print("\nDataset Preview:")
@@ -42,12 +46,13 @@ print(f"Y = {slope:.4f}X + {intercept:.4f}")
 # Part (b): Plot Data + Regression Line
 # -------------------------------
 
-plt.figure()
-plt.scatter(X, Y)
-plt.plot(X, slope*X + intercept)
+plt.figure(figsize=(8, 5))
+plt.scatter(X, Y, color='blue', label='Actual Data')
+plt.plot(X, slope*X + intercept, color='red', label='Regression Line')
 plt.xlabel("X")
 plt.ylabel("Y")
-plt.title("Data Points and Regression Line")
+plt.title("Textile Data Points and Regression Line")
+plt.legend()
 plt.show()
 
 # -------------------------------
@@ -70,8 +75,9 @@ model.fit(X_train, Y_train)
 Y_pred = model.predict(X_test)
 
 # Predict Y for X = 2026
-future_value = model.predict([[2026]])
-print("\nPredicted Y for X = 2026:", future_value[0])
+test_val = 2026 
+future_value = model.predict([[test_val]])
+print(f"\nPredicted Y for X = {test_val}: {future_value[0]:.4f}")
 
 # -------------------------------
 # Part (d): RMSE and R2 Score
@@ -81,5 +87,5 @@ rmse = np.sqrt(mean_squared_error(Y_test, Y_pred))
 r2 = r2_score(Y_test, Y_pred)
 
 print("\nModel Evaluation:")
-print("RMSE:", rmse)
-print("R2 Score:", r2)
+print(f"RMSE: {rmse:.4f}")
+print(f"R2 Score: {r2:.4f}")

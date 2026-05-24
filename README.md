@@ -1,7 +1,7 @@
 
 ## 📌 Project Overview
 
-Welcome to **ML_Lab** — a hands-on collection of machine learning experiments, implementations, and explorations designed to help learners understand core ML concepts through code.  
+Welcome to **ML Lab** a hands on collection of machine learning experiments, implementations, and explorations designed to help learners understand core ML concepts through code.  
 This repository contains practical examples, Jupyter notebooks, and scripts that demonstrate how various ML algorithms work on real datasets.
 
 Whether you’re a beginner in machine learning or an enthusiast looking to strengthen your foundation, this repo is built to support your learning journey.

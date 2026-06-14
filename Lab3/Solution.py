@@ -5,18 +5,15 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
-# ---------------------------
-# Load Dataset
-# ---------------------------
+# Load Datasets
 url = "https://www.nitttrkol.ac.in/kinsuk/ML_lab3_data.xlsx"
 data = pd.read_excel(url)
 
 print("Original Dataset:")
 print(data.head())
 
-# ---------------------------
 # a) Label Encoding
-# ---------------------------
+
 le = LabelEncoder()
 
 encoded_data = data.copy()

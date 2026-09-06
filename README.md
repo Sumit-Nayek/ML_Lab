@@ -23,7 +23,7 @@ The primary objectives of this project are:
 
 This repository applies core machine learning concepts including:
 
-### 📊 Supervised Learning
+### Supervised Learning
 - **Linear Regression**  
 - **Logistic Regression**  
 - **Decision Trees**  
@@ -31,21 +31,21 @@ This repository applies core machine learning concepts including:
 - **Support Vector Machines (SVM)**  
 - **K-Nearest Neighbors (KNN)**
 
-### 📉 Unsupervised Learning
+### Unsupervised Learning
 - **K-Means Clustering**
 
-### 📋 Data Processing
+### Data Processing
 - Feature scaling  
 - Train/Test split  
 - Handling missing values  
 - Encoding categorical variables
 
-### 📈 Model Evaluation
+### Model Evaluation
 - Accuracy, Precision, Recall, F1-Score  
 - Confusion Matrix  
 - ROC-AUC
 
-## 🧰 Tools & Libraries Used
+## Tools & Libraries Used
 
 The ML Lab project uses:
 
